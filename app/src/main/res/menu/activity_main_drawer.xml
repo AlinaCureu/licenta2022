@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Acasă" />
+        <item
+            android:id="@+id/nav_logare"
+            android:icon="@drawable/ic_baseline_security_24"
+            android:title="@string/menu_Autentificare" />
+        <item
+            android:id="@+id/nav_inregistrare"
+            android:icon="@drawable/ic_baseline_person_add_alt_1_24"
+            android:title="@string/menu_Înregistrare" />
+        <item
+            android:id="@+id/nav_meniu"
+            android:icon="@drawable/ic_baseline_restaurant_menu_24"
+            android:title="@string/menu_Meniu" />
+        <item
+            android:id="@+id/nav_istoric"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="@string/menu_Istoriagustului" />
+        <item
+            android:id="@+id/nav_Ieșire"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="Ieșire" />
+
+
+
+    </group>
+</menu>

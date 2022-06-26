@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.jonyapps.a2022proiect.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_logare"
+        android:name="com.jonyapps.a2022proiect.ui.logare.LogareFragment"
+        android:label="@string/menu_Logare"
+        tools:layout="@layout/fragment_logare" />
+
+    <fragment
+        android:id="@+id/nav_inregistrare"
+        android:name="com.jonyapps.a2022proiect.ui.inregistrare.InregistrareFragment"
+        android:label="@string/menu_Înregistrare"
+        tools:layout="@layout/fragment_inregistrare" />
+    <fragment
+        android:id="@+id/nav_meniu"
+        android:name="com.jonyapps.a2022proiect.ui.meniu.MeniuFragment"
+        android:label="@string/menu_Meniu"
+        tools:layout="@layout/fragment_meniu" />
+    <fragment
+        android:id="@+id/nav_istoric"
+        android:name="com.jonyapps.a2022proiect.ui.istoric.IstoricFragment"
+        android:label="Istoria gustului"
+        tools:layout="@layout/fragment_istoric" />
+    <fragment
+        android:id="@+id/nav_iesire"
+        android:name="com.jonyapps.a2022proiect.ui.iesire.IesireFragment"
+        android:label="@string/menu_Ieșire"
+        tools:layout="@layout/fragment_iesire" />
+
+</navigation>

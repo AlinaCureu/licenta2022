@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">2022proiect</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_logare">logare</string>
+    <string name="menu_inregistrare">inregistrare</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="cristal">Cristal</string>
+    <string name="meniu">Meniu</string>
+    <string name="nregistrare">Înregistrare</string>
+    <string name="logare">Logare</string>
+    <string name="inregistrare">inregistrare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_meniu">meniu</string>
+    <string name="menu_ajutor">ajutor</string>
+    <string name="menu_iesire">iesire</string>
+    <string name="_0">0</string>
+    <string name="lei">lei</string>
+    <string name="pizaa">Pizaa</string>
+    <string name="_30">30</string>
+    <string name="menu_Logare" />
+    <string name="menu_Înregistrare">Înregistrare</string>
+    <string name="menu_Meniu">Meniu</string>
+    <string name="menu_Ieșire" />
+    <string name="menu_Autentificare">Autentificare</string>
+    <string name="menu_Istoriagustului">Istoria gustului</string>
+    <string name="menu_Iesire" />
+</resources>
