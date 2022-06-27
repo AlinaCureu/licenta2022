@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -18,7 +19,7 @@ public class LogareFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_logare,container,false);
-
+        getActivity().getWindow().setBackgroundDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.backgroundinregistrare));
 
         return root;
     }

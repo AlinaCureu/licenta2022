@@ -13,29 +13,42 @@
         android:theme="@style/Theme.2022proiect">
         <activity
             android:name=".ui.Desert"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".ui.Paste"
-            android:exported="false" />
+            android:exported="false"
+
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            />
         <activity
             android:name=".ui.Pizza"
-            android:exported="false" />
+            android:exported="false"
+
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".ui.Carne"
-            android:exported="false" />
+            android:exported="false"
+
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".ui.Micdejun"
-            android:exported="false" />
+            android:exported="false"
+
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".ui.Garnituri"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".MainActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
             android:exported="false" />
         <activity
-            android:name=".Paginastart"
+            android:name=".PaginaStart"
             android:exported="true"
             android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize"
             android:theme="@style/Theme.2022proiect.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,6 +56,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

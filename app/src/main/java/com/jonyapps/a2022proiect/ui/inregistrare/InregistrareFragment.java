@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import com.jonyapps.a2022proiect.R;
 import com.jonyapps.a2022proiect.SQL;
@@ -23,7 +25,7 @@ public class InregistrareFragment extends Fragment {
 
     public View onCreateView( LayoutInflater inflater,
                               ViewGroup container, Bundle savedInstanceState) {
-
+        getActivity().getWindow().setBackgroundDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.backgroundinregistrare));
         View v = inflater.inflate(R.layout.fragment_inregistrare, container, false);
         b2= v.findViewById(R.id.btnRegister);
         name= v.findViewById(R.id.inputUser);

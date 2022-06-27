@@ -3,18 +3,13 @@ package com.jonyapps.a2022proiect.ui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.jonyapps.a2022proiect.R;
-import com.jonyapps.a2022proiect.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 
@@ -35,13 +30,11 @@ public class Micdejun extends AppCompatActivity {
         listView = findViewById(R.id.listview);
 
         ArrayList<MicdejunModel> arrayList = new ArrayList<>();
+        for (int i = 1; i<20; i++) {
+            arrayList.add(new MicdejunModel(R.drawable.menu_image,"30"+ i + " lei","micdejun"));
+        }
 
-        arrayList.add(new MicdejunModel(R.drawable.menu_image, "30", "micdejun"));
-        arrayList.add(new MicdejunModel(R.drawable.menu_image, "20", "micdejun"));
-        arrayList.add(new MicdejunModel(R.drawable.menu_image, "20", "micdejun"));
-        arrayList.add(new MicdejunModel(R.drawable.menu_image, "20", "micdejun"));
-
-        ListAdapter listAdapter = new ListAdapter(this, R.layout.list_item, arrayList);
+        ListAdapter listAdapter = new ListAdapter(this, R.layout.list_item, arrayList, this.getSupportFragmentManager());
         listView.setAdapter(listAdapter);
 
 

@@ -33,12 +33,11 @@ public class MicdejunFragment extends Fragment {
 
         ArrayList<MicdejunModel> arrayList=new ArrayList<>();
 
-        arrayList.add(new MicdejunModel(R.drawable.menu_image,"30","micdejun"));
-        arrayList.add(new MicdejunModel(R.drawable.menu_image,"20","micdejun"));
-        arrayList.add(new MicdejunModel(R.drawable.menu_image,"20","micdejun"));
-        arrayList.add(new MicdejunModel(R.drawable.menu_image,"20","micdejun"));
+        for (int i = 1; i<20; i++) {
+            arrayList.add(new MicdejunModel(R.drawable.menu_image,"30","micdejun"));
+        }
 
-        ListAdapter listAdapter=new ListAdapter(getContext(),R.layout.list_item,arrayList);
+        ListAdapter listAdapter=new ListAdapter(getContext(),R.layout.list_item,arrayList, getActivity().getSupportFragmentManager());
         listView.setAdapter(listAdapter);
 
         //seton click lister(){

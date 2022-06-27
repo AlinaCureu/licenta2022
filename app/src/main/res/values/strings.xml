@@ -17,8 +17,7 @@
     <string name="meniu">Meniu</string>
     <string name="nregistrare">Înregistrare</string>
     <string name="logare">Logare</string>
-    <string name="inregistrare">inregistrare</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="inregistrare">Inregistrare</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_meniu">meniu</string>
     <string name="menu_ajutor">ajutor</string>
@@ -34,4 +33,11 @@
     <string name="menu_Autentificare">Autentificare</string>
     <string name="menu_Istoriagustului">Istoria gustului</string>
     <string name="menu_Iesire" />
+    <string name="parola">Parola</string>
+    <string name="confirma_parola">Confirma parola</string>
+    <string name="nume_de_utilizator">Nume de utilizator</string>
+    <string name="adresa">Adresa</string>
+    <string name="aveti_deja_un_cont">Aveti deja un cont?</string>
+    <string name="da">da</string>
+    <string name="nu">nu</string>
 </resources>

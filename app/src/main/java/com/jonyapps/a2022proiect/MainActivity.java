@@ -1,8 +1,10 @@
 package com.jonyapps.a2022proiect;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -16,6 +18,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.jonyapps.a2022proiect.databinding.ActivityMainBinding;
+import com.jonyapps.a2022proiect.ui.iesire.IesireFragmentDialog;
 
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
@@ -36,9 +39,17 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
+
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        navigationView.getMenu().getItem(5).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                new IesireFragmentDialog().show(getSupportFragmentManager(), IesireFragmentDialog.IESIRE_FRAGMENT_DIALOG);
+                return true;
+            }
+        });
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_inregistrare, R.id.nav_logare,R.id.nav_meniu,R.id.nav_istoric,R.id.nav_iesire)
                 .setDrawerLayout(drawer)
