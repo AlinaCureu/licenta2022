@@ -20,12 +20,14 @@ public class ListAdapter extends ArrayAdapter<MicdejunModel> {
 
     private Context mContext;
     private int mResource;
+    private ArrayList<MicdejunModel> mancaruri;
 
 
     public ListAdapter(@NonNull Context context, int resource, @NonNull ArrayList<MicdejunModel> objects) {
         super(context, resource, objects);
         this.mContext=context;
         this.mResource=resource;
+        this.mancaruri=objects;
     }
 
     @NonNull

@@ -1,5 +1,7 @@
 package com.jonyapps.a2022proiect;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -20,6 +22,8 @@ import java.util.ArrayList;
 public class MicdejunFragment extends Fragment {
 
     ListView listView;
+    ListView macaruriAdaugate;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.activity_micdejun,container,false);
@@ -37,7 +41,13 @@ public class MicdejunFragment extends Fragment {
         ListAdapter listAdapter=new ListAdapter(getContext(),R.layout.list_item,arrayList);
         listView.setAdapter(listAdapter);
 
+        //seton click lister(){
+         //   macaruriAdaugate.add()
+       //
 
+        //Bundle bundle = new Bundle();
+        //bundle.putString("meniu1", "30_micdejun");
+      //  bundle.putSerializable(new MicdejunModel(R.drawable.menu_image,"30","micdejun"));
 
         return v;
     }

@@ -39,9 +39,6 @@ public class CartListAdapter extends ArrayAdapter<MicdejunModel> {
         TextView name=convertView.findViewById(R.id.name);
 
 
-        imageView.setImageResource(getItem(position).getImage());
-        price.setText(getItem(position).getPrice());
-        name.setText(getItem(position).getName());
 
 
         return  convertView;

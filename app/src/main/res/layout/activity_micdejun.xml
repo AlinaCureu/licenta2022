@@ -25,10 +25,10 @@
             android:layout_width="0dp"
             android:layout_weight="11"
             android:layout_height="wrap_content"
-            android:text="Drink list"
+            android:text="Mic dejun"
             android:layout_gravity="center_vertical"
             android:textSize="30sp"
-            android:textStyle="bold"
+            android:textStyle="italic"
             android:gravity="center"/>
 
         <FrameLayout
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/panoucos"
-        android:padding="8dp"/>
+        android:padding="8dp" />
 
         <FrameLayout
             android:id="@+id/btnCart"

@@ -4,7 +4,6 @@ public class MicdejunModel {
     int image;
     String price, name;
 
-
     public MicdejunModel(int image, String price, String name) {
         this.image = image;
         this.price = price;
@@ -35,4 +34,5 @@ public class MicdejunModel {
         this.name = name;
     }
 }
+
 

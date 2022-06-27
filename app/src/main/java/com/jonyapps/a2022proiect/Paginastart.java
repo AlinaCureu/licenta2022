@@ -23,12 +23,6 @@ public class Paginastart extends AppCompatActivity {
         setContentView(R.layout.activity_paginastart1);
 
 
-        ConstraintLayout constraintLayout=findViewById(R.id.layout);
-        AnimationDrawable animationDrawable=(AnimationDrawable) constraintLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(4000);
-        animationDrawable.start();
-
 
         btn=findViewById(R.id.btnmeniu);
 
